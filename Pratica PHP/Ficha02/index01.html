@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Votação</title>
+</head>
+<body>
+    <h1>Formulario de Votação</h1>
+    <form action="resultado.php" method="post">
+        <p><strong>Instruções:</strong> Selecione no maximo 3 candidatos.</p>
+        <fieldset>
+            <legend>Candidatos:</legend>
+            <input type="checkbox" name="candidato[]" value="Rafael"> Rafael<br>
+            <input type="checkbox" name="candidato[]" value="Maria"> Maria<br>
+            <input type="checkbox" name="candidato[]" value="Carlos"> Carlos<br>
+            <input type="checkbox" name="candidato[]" value="Leandro"> Leandro<br>
+            <input type="checkbox" name="candidato[]" value="Alex"> Alex<br>    
+        </fieldset>
+        <br>
+        <input type="submit" value="Submeter">
+
+    </form>
+    
+</body>
+</html>
