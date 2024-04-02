@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabuada Interativa</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Tabuada Interativa</h1>
-    <form action="tabuada.php" method="post">
+    <header>
+        <h1>Tabuada Interativa</h1>
+    </header>
+    
+    <section>
+        <form action="tabuada.php" method="post">
         Digite um numero (entre 1 e 10): <input type="number" name="numero" min="1" max="10" required><br><br>
         <input type="submit" value="Gerar Tabuada">
     </form>
+    </section>
+    
 </body>
 </html>

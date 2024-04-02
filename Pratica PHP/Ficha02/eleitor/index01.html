@@ -4,23 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Votação</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Formulario de Votação</h1>
-    <form action="resultado.php" method="post">
-        <p><strong>Instruções:</strong> Selecione no maximo 3 candidatos.</p>
-        <fieldset>
+    <header>
+        <h1>Formulario de Votação</h1>
+    </header>
+    
+    <section>
+        <form action="resultado.php" method="post">
+            <p><strong>Instruções:</strong> Selecione no maximo 3 candidatos.</p>
+            <label for="nome">Eleitor:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+         <fieldset>
             <legend>Candidatos:</legend>
             <input type="checkbox" name="candidato[]" value="Rafael"> Rafael<br>
             <input type="checkbox" name="candidato[]" value="Maria"> Maria<br>
             <input type="checkbox" name="candidato[]" value="Carlos"> Carlos<br>
             <input type="checkbox" name="candidato[]" value="Leandro"> Leandro<br>
             <input type="checkbox" name="candidato[]" value="Alex"> Alex<br>    
-        </fieldset>
-        <br>
-        <input type="submit" value="Submeter">
+         </fieldset>
+         <br>
+         <input type="submit" value="Submeter">
 
     </form>
+    </section>
+    
     
 </body>
 </html>
