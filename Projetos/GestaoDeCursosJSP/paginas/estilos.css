@@ -1,0 +1,281 @@
+#body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centraliza verticalmente o conteúdo */
+     min-height: 80vh; /* Altura mínima para ocupar boa parte da tela */
+    padding: 40px 20px; /* Ajuste opcional para espaçamento superior */
+}
+
+#cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #e31b23;
+    height: 80px;
+}
+
+/* Estilo do logo */
+.logo img {
+    width: 50px;
+    height: auto;
+}
+
+/* Estilo do menu de navegação */
+nav {
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #002d72;
+    color: #fff;
+}
+
+/* Estilo do botão de login */
+.login {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilizações para os botões dentro da classe .botao */
+.botao {
+    margin-left: 10px; /* Espaçamento entre os botões */
+}
+
+.botao form {
+    margin: 0; /* Remove margens padrão do formulário */
+}
+
+.botao input[type="submit"] {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #002d72;
+    color: white;
+    border: 1px solid #002d72; /* Borda da mesma cor que o fundo para estilo botão plano */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.botao input[type="submit"]:hover {
+    background-color: #e31b23;
+    border-color: #065d1e; /* Altera a cor da borda ao passar o mouse */
+}
+
+.botaoCorpo {
+    margin-top: 40px; /* Ajuste a margem superior para afastar dos cabeçalhos */
+    display: flex;
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    width: 100%; /* Largura total disponível */
+    box-sizing: border-box; /* Garante que padding e bordas sejam incluídos na largura */
+}
+
+.botaoCorpo form {
+    display: flex;
+    justify-content: center; /* Centraliza o formulário dentro de botaoCorpo */
+    align-items: center; /* Centraliza verticalmente o formulário */
+    width: 100%; /* Largura total disponível */
+}
+
+.botaoCorpo input[type="submit"] {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #002d72;
+    color: white;
+    border: 1px solid #002d72; /* Borda da mesma cor que o fundo para estilo botão plano */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px; /* Margem inferior para acomodar o rodapé */
+}
+
+.main-content .main-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.courses-button {
+    margin-top: 20px;
+}
+
+.courses-button button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #e31b23;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #000000;
+}
+
+.courses-button button:hover {
+    box-shadow: 1px 1px 5px #000000;
+}
+
+/* Estilos para o formulário de registro */
+.registro-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #e31b23;
+}
+
+/* Estilos para a página de login */
+#login-box {
+    background-color: #A9F5A9;
+    width: 380px;
+    height: 260px;
+    margin: 140px auto 0;
+    overflow: hidden;
+    box-shadow: 0 0 5px #6F6666;
+}
+
+#login-cabecalho {
+    background-color: #088A29;
+    height: 50px;
+    border-bottom: 2px solid #BDBDBD;
+    text-align: center;
+    font: bold 20px/50px sans-serif;
+    color: white;
+}
+
+.input-div {
+    margin: 20px;
+    padding: 5px;
+    font: bold 14px sans-serif;
+    color: #0B6121;
+}
+
+.input-div input {
+    width: 325px;
+    height: 35px;
+    padding-left: 7px;
+    font: normal 13px sans-serif;
+    color: #0B6121;
+}
+
+#input-pass {
+    margin-top: -15px;
+}
+
+#input-user {
+    margin-top: 10px;
+}
+
+#acoes {
+    width: 330px;
+    margin: 25px;
+}
+
+#registo {
+    float: left;
+    margin-top: -10px;
+}
+
+#volta {
+    float: left;
+    margin-top: -10px;
+}
+
+input[type=submit] {
+    float: right;
+    background-color: #088A29;
+    padding: 10px 50px;
+    margin-top: -15px;
+    font: bold 13px sans-serif;
+    color: white;
+    box-shadow: 2px 2px 5px #6F6666;
+    cursor: pointer;
+    border: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+input[type=submit]:hover {
+    box-shadow: 1px 1px 5px #6F6666;
+}
+.footer {
+    background-color: #e31b23;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
